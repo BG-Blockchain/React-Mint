@@ -1,3 +1,4 @@
+//Main blockchain script for interaction with the contract
 import Web3 from 'web3';
 import { CONTRACT_ABI, CONTRACT_ADDRESS } from './config';
 

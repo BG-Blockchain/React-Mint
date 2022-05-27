@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { mintToken } from '../Web3Client.js'
 import background1 from "../img/background1.png";
 import { Image, Row, Col } from 'react-bootstrap';
+//Library for blockchain interaction
+import { mintToken } from '../Web3Client.js'
 
+//main function for mint 
 function GetPP() {
     const imageStyle = {border: "none", padding: "30px", marginBottom: "none"};
     const btnStyle = {border: "none", padding: "0", marginBottom: "30px"};
