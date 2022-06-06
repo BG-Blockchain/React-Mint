@@ -44,5 +44,5 @@ export const mintToken = async () => {
     if (!isInitialized) {
         await init();
     }
-    return nftContract.methods.mint(selectedAccount, 1).send({ from: selectedAccount, value: nftContract.methods.cost}) // This is 1 MATIC or 1 ETH depending on the chain you choose (now 0.0005)
+    return nftContract.methods.mint(selectedAccount, 1).send({ from: selectedAccount, value: nftContract.methods.cost()}) // This is 1 MATIC or 1 ETH depending on the chain you choose (now 0.0005)
 }
